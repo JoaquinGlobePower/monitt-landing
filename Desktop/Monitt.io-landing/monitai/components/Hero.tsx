@@ -55,7 +55,7 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-2 gap-16 items-center">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-[2fr_1fr] gap-10 items-center">
         {/* Left: copy */}
         <div>
           <motion.div
@@ -136,7 +136,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.3, ease: 'easeOut' as const }}
-          className="flex justify-center lg:justify-end"
+          className="flex justify-center"
         >
           <div
             className="relative w-64 rounded-3xl border border-[var(--border)] bg-[var(--bg-card)] p-1 shadow-2xl"

@@ -50,17 +50,19 @@ export default function About() {
             initial={{ opacity: 0, x: 32 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="flex flex-col gap-4"
+            className="flex flex-col gap-4 self-stretch"
           >
               <div
-                className="rounded-2xl overflow-hidden"
-                style={{ boxShadow: '0 0 30px rgba(48,191,18,0.2)' }}
+                className="relative rounded-2xl overflow-hidden self-stretch"
+                style={{ 
+                boxShadow: '0 0 40px rgba(48,191,18,0.25)',
+                minHeight: '400px',
+                height: '100%'}}
               >
                 <Image
                   src="/rob1.jpeg"
                   alt="Instalación en terreno — Monitt.io"
-                  width={400}
-                  height={320}
+                  fill
                   quality={90}
                   className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
                   style={{ filter: 'contrast(1.05) saturate(1.1)' }}

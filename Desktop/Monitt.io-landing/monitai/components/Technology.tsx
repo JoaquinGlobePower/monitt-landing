@@ -74,19 +74,21 @@ export default function Technology() {
             initial={{ opacity: 0, x: 32 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex justify-center"
+            className="flex justify-center self-stretch"
           >
             <div
-              className="relative w-full max-w-md rounded-2xl overflow-hidden"
-              style={{ boxShadow: '0 0 40px rgba(48,191,18,0.25)' }}
+              className="relative w-full max-w-md rounded-2xl overflow-hidden self-stretch"
+                style={{ 
+                boxShadow: '0 0 40px rgba(48,191,18,0.25)',
+                minHeight: '400px',
+                height: '100%'}}
             >
               <Image
-                src="/device.jpg"
+                src="/monitt-io.jpeg"
                 alt="TRB256 IoT Gateway"
-                width={600}
-                height={450}
+                fill
                 quality={90}
-                className="w-full object-cover"
+                className="object-cover"
                 style={{ filter: 'contrast(1.1) brightness(1.05)' }}
               />
             </div>

@@ -16,8 +16,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-3">
-              <Image src="/logo.png" alt="Monitt.io" width={28} height={28} className="rounded" />
-              <span className="font-semibold text-[var(--text-1)] font-['Space_Grotesk']">Monitt.io</span>
+              <Image src="/logolight.svg" alt="Monitt.io" width={132} height={42} className="rounded" />
             </div>
             <p className="text-xs text-[var(--text-2)] leading-relaxed">{f.tagline}</p>
           </div>
