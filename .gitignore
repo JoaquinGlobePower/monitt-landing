@@ -1,0 +1,8 @@
+# Ignore everything in the home directory
+*
+
+# Except this file and the project
+!.gitignore
+!Desktop/
+!Desktop/Monitt.io-landing/
+!Desktop/Monitt.io-landing/**
