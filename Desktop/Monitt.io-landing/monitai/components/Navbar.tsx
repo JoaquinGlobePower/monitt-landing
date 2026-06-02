@@ -1,6 +1,7 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, } from 'react'
+import {useTheme} from 'next-themes'
 import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 import { useT } from '@/lib/i18n'
@@ -8,6 +9,7 @@ import ThemeToggle from './ThemeToggle'
 import LanguageToggle from './LanguageToggle'
 
 export default function Navbar() {
+  const { resolvedTheme } = useTheme()
   const { t } = useT()
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -38,10 +40,7 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 shrink-0">
-          <Image src="/logo.png" alt="Monitt.io logo" width={32} height={32} className="rounded" />
-          <span className="font-semibold text-lg text-[var(--text-1)] font-['Space_Grotesk']">
-            Monitt.io
-          </span>
+          <Image src={resolvedTheme === 'dark' ? '/logolight.svg' : '/logodark.svg'} alt="Monitt.io logo" width={132} height={80} className="rounded" />
         </a>
 
         {/* Desktop links */}

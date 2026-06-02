@@ -52,13 +52,12 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="flex flex-col gap-4"
           >
-            <div className="grid grid-cols-2 gap-4">
               <div
                 className="rounded-2xl overflow-hidden"
                 style={{ boxShadow: '0 0 30px rgba(48,191,18,0.2)' }}
               >
                 <Image
-                  src="/field1.jpg"
+                  src="/rob1.jpeg"
                   alt="Instalación en terreno — Monitt.io"
                   width={400}
                   height={320}
@@ -67,21 +66,7 @@ export default function About() {
                   style={{ filter: 'contrast(1.05) saturate(1.1)' }}
                 />
               </div>
-              <div
-                className="rounded-2xl overflow-hidden"
-                style={{ boxShadow: '0 0 30px rgba(48,191,18,0.2)' }}
-              >
-                <Image
-                  src="/field2.jpg"
-                  alt="TRB256 en terreno — Monitt.io"
-                  width={400}
-                  height={320}
-                  quality={90}
-                  className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
-                  style={{ filter: 'contrast(1.05) saturate(1.1)' }}
-                />
-              </div>
-            </div>
+
             <p className="text-center text-xs text-[var(--text-2)]">{t.about.caption}</p>
           </motion.div>
         </div>
