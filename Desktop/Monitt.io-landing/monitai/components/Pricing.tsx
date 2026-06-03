@@ -108,7 +108,9 @@ export default function Pricing() {
               </ul>
 
               <a
-                href="#contacto"
+                href="https://calendar.app.google/RYDQUm6yvCDA6meD7"
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`block text-center px-6 py-3 rounded-xl font-semibold text-sm transition-colors ${
                   plan.highlight
                     ? 'bg-[var(--accent)] text-white hover:bg-[var(--accent-hi)]'

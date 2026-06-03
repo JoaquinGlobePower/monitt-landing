@@ -61,7 +61,9 @@ export default function Navbar() {
           <LanguageToggle />
           <ThemeToggle />
           <a
-            href="#contacto"
+            href="https://calendar.app.google/RYDQUm6yvCDA6meD7"
+            target="_blank"
+            rel="noopener noreferrer"
             className="ml-2 px-4 py-2 rounded-lg bg-[var(--accent)] text-white text-sm font-semibold hover:bg-[var(--accent-hi)] transition-colors"
             aria-label={t.nav.cta}
           >
@@ -99,7 +101,9 @@ export default function Navbar() {
             <LanguageToggle />
             <ThemeToggle />
             <a
-              href="#contacto"
+              href="https://calendar.app.google/RYDQUm6yvCDA6meD7"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               className="flex-1 text-center px-4 py-2 rounded-lg bg-[var(--accent)] text-white text-sm font-semibold"
             >

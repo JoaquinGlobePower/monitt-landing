@@ -97,7 +97,9 @@ export default function Hero() {
             className="flex flex-wrap gap-4"
           >
             <a
-              href="#contacto"
+              href="https://calendar.app.google/RYDQUm6yvCDA6meD7"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 rounded-xl bg-[var(--accent)] text-white font-semibold hover:bg-[var(--accent-hi)] transition-colors shadow-lg"
               style={{ boxShadow: '0 0 20px var(--accent-dim)' }}
             >
