@@ -26,7 +26,6 @@ export default function Navbar() {
     { label: t.nav.pricing, href: '#precios' },
     { label: t.nav.blog, href: '#blog' },
     { label: t.nav.about, href: '#nosotros' },
-    { label: t.nav.contact, href: '#contacto' },
   ]
 
   return (

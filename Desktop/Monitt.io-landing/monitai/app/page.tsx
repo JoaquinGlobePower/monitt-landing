@@ -6,7 +6,6 @@ import Technology from '@/components/Technology'
 import Pricing from '@/components/Pricing'
 import Blog from '@/components/Blog'
 import About from '@/components/About'
-import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 
 export default function Home() {
@@ -21,7 +20,6 @@ export default function Home() {
         <Pricing />
         <Blog />
         <About />
-        <Contact />
       </main>
       <Footer />
     </>
