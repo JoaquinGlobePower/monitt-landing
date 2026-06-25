@@ -14,9 +14,9 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
-  // A dónde lleva "Iniciar sesión": la app de la plataforma (su propia URL).
-  // Configurable por entorno con NEXT_PUBLIC_PLATFORM_URL; por defecto, el dev server de Vite.
-  const PLATFORM_URL = process.env.NEXT_PUBLIC_PLATFORM_URL || 'http://localhost:5173'
+  // A dónde lleva "Iniciar sesión": la plataforma. Por defecto la URL de producción
+  // (app.monitt.io); se puede sobreescribir con NEXT_PUBLIC_PLATFORM_URL (p.ej. localhost en dev).
+  const PLATFORM_URL = process.env.NEXT_PUBLIC_PLATFORM_URL || 'https://app.monitt.io'
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 10)
