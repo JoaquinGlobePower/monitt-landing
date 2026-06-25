@@ -9,6 +9,7 @@ export interface ContentShape {
     about: string
     contact: string
     cta: string
+    login: string
   }
   hero: {
     headline: string
@@ -101,6 +102,7 @@ const content: Record<Lang, ContentShape> = {
       about: 'Nosotros',
       contact: 'Contacto',
       cta: 'Solicitar Demo',
+      login: 'Iniciar sesión',
     },
     hero: {
       headline: 'Convierte tu maquinaria industrial en activos inteligentes',
@@ -313,6 +315,7 @@ const content: Record<Lang, ContentShape> = {
       about: 'About',
       contact: 'Contact',
       cta: 'Request Demo',
+      login: 'Sign in',
     },
     hero: {
       headline: 'Turn your industrial machinery into intelligent assets',

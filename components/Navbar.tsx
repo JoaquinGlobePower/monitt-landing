@@ -14,6 +14,10 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
+  // A dónde lleva "Iniciar sesión": la app de la plataforma (su propia URL).
+  // Configurable por entorno con NEXT_PUBLIC_PLATFORM_URL; por defecto, el dev server de Vite.
+  const PLATFORM_URL = process.env.NEXT_PUBLIC_PLATFORM_URL || 'http://localhost:5173'
+
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 10)
     window.addEventListener('scroll', handler)
@@ -61,10 +65,16 @@ export default function Navbar() {
           <LanguageToggle />
           <ThemeToggle />
           <a
+            href={PLATFORM_URL}
+            className="ml-2 px-4 py-2 rounded-lg border border-[var(--border)] text-[var(--text-1)] text-sm font-semibold hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
+          >
+            {t.nav.login}
+          </a>
+          <a
             href="https://calendar.app.google/RYDQUm6yvCDA6meD7"
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-2 px-4 py-2 rounded-lg bg-[var(--accent)] text-white text-sm font-semibold hover:bg-[var(--accent-hi)] transition-colors"
+            className="px-4 py-2 rounded-lg bg-[var(--accent)] text-white text-sm font-semibold hover:bg-[var(--accent-hi)] transition-colors"
             aria-label={t.nav.cta}
           >
             {t.nav.cta}
@@ -97,6 +107,13 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
+          <a
+            href={PLATFORM_URL}
+            onClick={() => setOpen(false)}
+            className="block text-center px-4 py-2 mb-3 rounded-lg border border-[var(--border)] text-[var(--text-1)] text-sm font-semibold hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
+          >
+            {t.nav.login}
+          </a>
           <div className="flex items-center gap-3">
             <LanguageToggle />
             <ThemeToggle />
